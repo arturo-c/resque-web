@@ -45,6 +45,13 @@ If you need a non-default resque server, use this environment variable.
 ```
 RAILS_RESQUE_REDIS=123.x.0.456:6712
 ```
+
+If you need to set a password for your redis server, use this env variable.
+
+```
+RAILS_RESQUE_REDIS_PASSWORD=verys3cureP@ss
+```
+
 ## Security
 
 You almost certainly want to limit access when using resque-web in production. Using [routes constraints](http://guides.rubyonrails.org/routing.html#request-based-constraints) is one way to achieve this:
